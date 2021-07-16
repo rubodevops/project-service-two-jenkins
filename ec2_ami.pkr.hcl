@@ -28,7 +28,7 @@ provisioner "file"{
 
 
   provisioner "ansible" {
-    playbook_file = "/var/lib/jenkins/workspace/pipline-webapp/playbook-servicetwo.yml"
+    playbook_file = "./playbook-servicetwo.yml"
   }
 
 }
