@@ -40,7 +40,7 @@ pipeline {
             steps {
                
                 sh 'packer init .'
-                sh 'echo $PATH'
+                sh 'ansible-playbook --version'
             }
         }
 
