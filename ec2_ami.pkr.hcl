@@ -3,8 +3,8 @@
 
 
 source "amazon-ebs" "basic-example" {
-  access_key    = ${AWS_ACCESS_KEY_ID}
-  secret_key    = ${AWS_SECRET_ACCESS_KEY}
+  access_key    = "AWS_ACCESS_KEY_ID"
+  secret_key    = "AWS_SECRET_ACCESS_KEY"
   region        = "us-east-2"
   source_ami    = "ami-00399ec92321828f5"
   instance_type = "t2.small"
