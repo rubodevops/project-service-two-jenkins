@@ -28,7 +28,7 @@ provisioner "file"{
 
 
   provisioner "ansible" {
-    playbook_file = "./playbook-servicetwo.yml"
+    playbook_file = "../playbook-servicetwo.yml"
   }
 
 }
