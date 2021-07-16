@@ -40,6 +40,7 @@ pipeline {
             steps {
                
                 sh 'packer init .'
+                sh 'echo $PATH'
             }
         }
 
