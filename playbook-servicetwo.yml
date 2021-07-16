@@ -2,19 +2,9 @@
 - hosts: all
   remote_user: root
   tasks:
-
-
-    
-
-    
-
-
-    
-   
-  
     - name: systemd autostart config
       template:
-        src: './templates/servicetwotemplate'
+        src: '/var/lib/jenkins/workspace/pipline-webapp/templates/servicetwotemplate'
         dest: '/etc/systemd/system/service-two.service'
       become: true  
   
