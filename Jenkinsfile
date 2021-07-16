@@ -2,8 +2,8 @@ pipeline {
     agent any
 
      environment {
-        AWS_ACCESS_KEY_ID     = aws_access
-        AWS_SECRET_ACCESS_KEY = aws_secret
+        AWS_ACCESS_KEY_ID     = "aws_access"
+        AWS_SECRET_ACCESS_KEY = "aws_secret"
         
     }
 
