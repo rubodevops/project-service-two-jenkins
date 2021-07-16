@@ -6,13 +6,19 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = "aws_secret"
         
     }
-
-    stages {
     
-    tools { 
+     tools { 
         maven 'Maven 3.6.3' 
     }
     
+    
+    
+    
+    
+
+    stages {
+    
+   
     
     
      stage ('Build'){
