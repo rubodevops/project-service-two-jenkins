@@ -1,0 +1,39 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+
+
+    
+
+    
+
+
+    
+   
+  
+    - name: systemd autostart config
+      template:
+        src: './templates/servicetwotemplate'
+        dest: '/etc/systemd/system/service-two.service'
+      become: true  
+  
+    - name: enable service-two
+      ansible.builtin.service:
+        name: service-two.service
+        enabled: yes
+      become: true
+
+    - name: start service-two
+      ansible.builtin.service:
+        name: service-two.service
+        state: started
+        daemon_reload: yes
+      become: true
+
+  
+  
+
+
+
+  
