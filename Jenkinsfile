@@ -7,10 +7,10 @@ pipeline {
         
     }
     
-     tools { 
-        maven
+   tools {
+        maven 'maven'
+       
     }
-    
     
     
     
