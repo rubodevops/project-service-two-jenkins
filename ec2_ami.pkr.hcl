@@ -19,7 +19,7 @@ build {
 
 
 provisioner "file"{
-  source = "**/target/*.jar"
+  source = "/var/lib/jenkins/workspace/pipline-webapp/target/service-two.jar"
   destination = "/home/ubuntu/"
 }
 
