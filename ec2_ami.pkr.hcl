@@ -20,7 +20,7 @@ build {
 
 provisioner "file"{
   source = "**/target/*.jar"
-  destination = "/home/ubuntu/
+  destination = "/home/ubuntu/"
 }
 
 
