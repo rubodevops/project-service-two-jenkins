@@ -1,4 +1,4 @@
-Unit]
+[Unit]
 Description=Manage Java service
 After=syslog.target network.target
 [Service]
